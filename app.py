@@ -3,6 +3,7 @@ from groq import Groq
 st.set_page_config(page_title = "Placement Practice", layout = "centered")
 st.title('AI Interview Assistant')
 st.caption('Practice and Prepare for your Placements here')
+st.caption("Launched by DEEKSHITHA DS")
 try:
   client = Groq(api_key = st.secrets["GROQ_API_KEY"])
 except (KeyError, FileNotFound):
@@ -19,3 +20,4 @@ if role == "Other":
   elif mode == 'Generate Code Question' :
     topic = st.selectbox('Topics', ['SQL','AIML','Python','DSA','C++/C','JAVA','ADA'])
     count = st.slider("Number of Questions",1,10,5)
+    
