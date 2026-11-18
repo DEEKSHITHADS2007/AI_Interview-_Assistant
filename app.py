@@ -11,3 +11,4 @@ except (KeyError, FileNotFound):
 role = st.selectbox('Job Title' , ['machine learning Engineer', 'Senior Software Engineer','DevOps Engineer', 'Other' ])
 if role == "Other":
   st.text_input("Enter your Job Title" , "XXXXXXX")
+  model = st.selectbox('Model',['openai/gpt-oss-safeguard-20b', 'qwen/qwen3.8-27b'])
