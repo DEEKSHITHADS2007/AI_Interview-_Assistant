@@ -8,4 +8,4 @@ try:
 except (KeyError, FileNotFound):
   st.error("API Key is missing.Add it in Advanced settings")
   st.stop()
-  role = st.selectbox('Job Title' , [machine learning Engineer', 'Senior Software Engineer','DevOps Engineer', 'Other' ])
+  role = st.selectbox('Job Title' , ['machine learning Engineer', 'Senior Software Engineer','DevOps Engineer', 'Other' ])
