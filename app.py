@@ -24,7 +24,7 @@ if role == "Other":
     question = st.text_area('Enter Interview Qestion here')
     answer = st.text_area('Enter your answer', height=160)
   if st.button("Generate AI Response", type = "primary"):
-    if mode in  ['Evaluate Answers', 'Improve Answers'] and (not question.strip())
+    if mode in  ['Evaluate Answers', 'Improve Answers'] and (not question.strip()) or (not answer.strip()):
        st.warning("Please enter a valid Questions and Answer")
        st.stop()
     
