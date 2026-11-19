@@ -51,7 +51,7 @@ if role == "Other":
         st.markdown(output)
         st.download_button("Download Response", output , file_name = "Interview_Assistant.txt",mime = 'text/plain')
       except Exception as e:
-        st.error ("API connection was unsuccessful : ", e)
+        st.error ("API connection was unsuccessful : , {e}")
         st.info ("Please check your API Key and rate limits")
         st.caption ("Powered by Streamlit.io and GitHub. Using LLM API")
                 
