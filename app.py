@@ -23,5 +23,5 @@ if role == "Other":
   else:
     question = st.text_area('Enter Interview Qestion here')
     answer = st.text_area('Enter your answer', height=160)
-   if st.button("Generate AI Response", type = "Primary"):
+   if st.button("Generate AI Response", type = "primary"):
     
