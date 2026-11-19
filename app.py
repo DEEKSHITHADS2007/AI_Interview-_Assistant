@@ -27,7 +27,7 @@ if role == "Other":
     if mode in  ['Evaluate Answers', 'Improve Answers'] and (not question.strip()or not answer.strip()):
        st.warning("Please enter a valid Questions and Answer")
        st.stop()
-    topic = "Topics is" +  topic  + "Difficulty is" +  Level
+    topics = "Topics is" +  topics  + "Difficulty is" +  Level
     if mode ==  "Generate Question":
        task = "Generate " + str(count) + "Frequently asked Interview Questions 3 theory and 2 conceptual Question. Do not give answers give hint"
     elif mode == "Generate Code Question":
