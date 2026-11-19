@@ -35,7 +35,7 @@ if role == "Other":
        task = "Question : " + question + "My Answer : " + answer +"Evaluate this answer basd on concepts,relevence, communication length of answer.Give each rating out of 5"
     elif mode == "Improve Answers":
        task = "Question : " + question + "My Answer : " + answer + "improve the answer based on coding ,communication,apptitude ,preparation on interview."
-    background = "Job role : " + role + " Difficulty level " + level
+    background = "Job role : " + role + " Difficulty level " + Level
     with st.spinner("Generating your answer ... "):
       try:
         response = client .chat.completions.create(
