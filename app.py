@@ -20,4 +20,8 @@ if role == "Other":
   elif mode == 'Generate Code Question' :
     topic = st.selectbox('Topics', ['SQL','AIML','Python','DSA','C++/C','JAVA','ADA'])
     count = st.slider("Number of Questions",1,10,5)
+  else:
+    question = st.text_area('Enter Interview Qestion here')
+    answer = st.text_area('Enter your answer', height=160)
+  if st.button("Generate AI Response", type = "Primary"):
     
